@@ -7,7 +7,12 @@ TextStyle _getTextStyle({
   required FontWeight fontWeight,
   required String fontFamily,
 }) {
-  return TextStyle(color: color, fontSize: fontSize, fontWeight: fontWeight, fontFamily: FontConstants.fontFamily);
+  return TextStyle(
+    color: color,
+    fontSize: fontSize,
+    fontWeight: fontWeight,
+    fontFamily: FontConstants.fontFamily,
+  );
 }
 
 TextStyle getRegularStyle({required Color color, double fontSize = FontSize.s12}) {
