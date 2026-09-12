@@ -42,5 +42,23 @@ ThemeData getAppTheme() {
       bodyLarge: getRegularStyle(color: ColorsManager.grey1),
       bodySmall: getRegularStyle(color: ColorsManager.grey),
     ),
+    inputDecorationTheme: InputDecorationTheme(
+      contentPadding: EdgeInsets.all(AppPadding.p8),
+      hintStyle: getRegularStyle(color: ColorsManager.grey, fontSize: FontSize.s14),
+      labelStyle: getMediumStyle(color: ColorsManager.grey, fontSize: FontSize.s14),
+      errorStyle: getRegularStyle(color: ColorsManager.error, fontSize: FontSize.s14),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: ColorsManager.primaryColor, width: AppSize.s1_5),
+        borderRadius: BorderRadius.all(Radius.circular(AppSize.s8)),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: ColorsManager.grey, width: AppSize.s1_5),
+        borderRadius: BorderRadius.all(Radius.circular(AppSize.s8)),
+      ),
+      errorBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: ColorsManager.error, width: AppSize.s1_5),
+        borderRadius: BorderRadius.all(Radius.circular(AppSize.s8)),
+      ),
+    ),
   );
 }
