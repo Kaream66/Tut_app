@@ -3,12 +3,14 @@ import 'package:new_project/core/resources/strings_manager.dart';
 import 'package:new_project/presentation/forgot_password/forgot_password_view.dart';
 import 'package:new_project/presentation/home/home_view.dart';
 import 'package:new_project/presentation/login/login_view.dart';
+import 'package:new_project/presentation/onboarding/onboarding_view.dart';
 import 'package:new_project/presentation/register/register_view.dart';
 import 'package:new_project/presentation/splash/splash_view.dart';
 import 'package:new_project/presentation/store_details/store_details_view.dart';
 
 class Routes {
   static const String splashRoute = '/splash';
+  static const String onBoardingRoute = '/onBoarding';
   static const String loginRoute = '/login';
   static const String registerRoute = '/register';
   static const String forgetPasswordRoute = '/forgetPassword';
@@ -21,6 +23,8 @@ class RouteGenerator {
     switch (settings.name) {
       case Routes.splashRoute:
         return MaterialPageRoute(builder: (context) => const SplashView());
+      case Routes.onBoardingRoute:
+        return MaterialPageRoute(builder: (context) => const OnBoardingView());
       case Routes.loginRoute:
         return MaterialPageRoute(builder: (context) => const LoginView());
       case Routes.registerRoute:
