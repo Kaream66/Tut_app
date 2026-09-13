@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:new_project/core/resources/theme_manager.dart';
 
 class MyApp extends StatefulWidget {
-  MyApp._internal();
+  const MyApp._internal();
 
   @override
   State<MyApp> createState() => _MyAppState();

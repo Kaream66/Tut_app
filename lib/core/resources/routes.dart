@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_project/core/resources/strings_manager.dart';
 import 'package:new_project/presentation/forgot_password/forgot_password_view.dart';
 import 'package:new_project/presentation/home/home_view.dart';
 import 'package:new_project/presentation/login/login_view.dart';
@@ -32,7 +33,7 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (context) => const StoreDetailsView());
       default:
         return MaterialPageRoute(
-          builder: (context) => const Scaffold(body: Center(child: Text('No Route Found'))),
+          builder: (context) => Scaffold(body: Center(child: Text(StringsManager.noRouteFound))),
         );
     }
   }
