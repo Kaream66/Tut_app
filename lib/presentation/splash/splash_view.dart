@@ -21,11 +21,11 @@ class _SplashViewState extends State<SplashView> {
     _startDelay();
   }
 
-  _startDelay() {
+  void _startDelay() {
     _timer = Timer(Duration(seconds: 3), _goNext);
   }
 
-  _goNext() {
+  void _goNext() {
     Navigator.pushReplacementNamed(context, Routes.onBoardingRoute);
   }
 

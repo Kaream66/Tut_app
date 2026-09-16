@@ -36,8 +36,9 @@ ThemeData getAppTheme() {
       ),
     ),
     textTheme: TextTheme(
-      displayLarge: getLightStyle(color: ColorsManager.white, fontSize: FontSize.s22),
+      displayLarge: getLightStyle(color: ColorsManager.darkGrey, fontSize: FontSize.s16),
       headlineLarge: getSemiBoldStyle(color: ColorsManager.darkGrey, fontSize: FontSize.s16),
+      headlineMedium: getRegularStyle(color: ColorsManager.darkGrey, fontSize: FontSize.s14),
       titleMedium: getMediumStyle(color: ColorsManager.lightGrey),
       bodyLarge: getRegularStyle(color: ColorsManager.grey1),
       bodySmall: getRegularStyle(color: ColorsManager.grey),
