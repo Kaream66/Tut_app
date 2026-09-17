@@ -8,6 +8,6 @@ class AssetsManager {
   static String onBoardingImage4 = '$imagePath/onboarding_logo4.svg';
   static String hollowCircle = '$imagePath/hollow_cirlce_ic.svg';
   static String solidCircle = '$imagePath/solid_circle_ic.svg';
-  static String rightArrow = '$imagePath/right_arrow.svg';
-  static String leftArrow = '$imagePath/left_arrow.svg';
+  static String rightArrow = '$imagePath/right_arrow_ic.svg';
+  static String leftArrow = '$imagePath/left_arrow_ic.svg';
 }
