@@ -93,6 +93,13 @@ class _OnboardingViewState extends State<OnBoardingView> {
         Padding(
           padding: EdgeInsetsGeometry.all(14),
           child: GestureDetector(
+            onTap: () {
+              _pageController.animateToPage(
+                _getPreviousIndex(),
+                duration: Duration(milliseconds: 300),
+                curve: Curves.bounceInOut,
+              );
+            },
             child: SizedBox(
               width: 20,
               height: 20,
@@ -109,6 +116,13 @@ class _OnboardingViewState extends State<OnBoardingView> {
         Padding(
           padding: EdgeInsetsGeometry.all(14),
           child: GestureDetector(
+            onTap: () {
+              _pageController.animateToPage(
+                _getNextIndex(),
+                duration: Duration(milliseconds: 300),
+                curve: Curves.bounceInOut,
+              );
+            },
             child: SizedBox(
               width: 20,
               height: 20,
@@ -118,6 +132,22 @@ class _OnboardingViewState extends State<OnBoardingView> {
         ),
       ],
     );
+  }
+
+  int _getPreviousIndex() {
+    int previousindex = --_currentIndex;
+    if (previousindex == -1) {
+      previousindex = _list.length - 1;
+    }
+    return previousindex;
+  }
+
+  int _getNextIndex() {
+    int nextindex = ++_currentIndex;
+    if (nextindex == _list.length) {
+      nextindex = 0;
+    }
+    return nextindex;
   }
 
   Widget _getCircleColor(int index) {
