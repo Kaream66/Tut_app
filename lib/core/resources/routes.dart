@@ -3,7 +3,7 @@ import 'package:new_project/core/resources/strings_manager.dart';
 import 'package:new_project/presentation/forgot_password/forgot_password_view.dart';
 import 'package:new_project/presentation/home/home_view.dart';
 import 'package:new_project/presentation/login/login_view.dart';
-import 'package:new_project/presentation/onboarding/onboarding_view.dart';
+import 'package:new_project/presentation/onboarding/views/onboarding_view.dart';
 import 'package:new_project/presentation/register/register_view.dart';
 import 'package:new_project/presentation/splash/splash_view.dart';
 import 'package:new_project/presentation/store_details/store_details_view.dart';

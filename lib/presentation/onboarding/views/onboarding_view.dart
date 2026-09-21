@@ -5,6 +5,7 @@ import 'package:new_project/core/resources/assets_manager.dart';
 import 'package:new_project/core/resources/colors_manager.dart';
 import 'package:new_project/core/resources/routes.dart';
 import 'package:new_project/core/resources/strings_manager.dart';
+import 'package:new_project/domain/models/onboarding_slider_model.dart';
 
 class OnBoardingView extends StatefulWidget {
   const OnBoardingView({super.key});
@@ -157,14 +158,6 @@ class _OnboardingViewState extends State<OnBoardingView> {
       return SvgPicture.asset(AssetsManager.solidCircle);
     }
   }
-}
-
-class SliderObject {
-  String title;
-  String subTitle;
-  String image;
-
-  SliderObject(this.title, this.subTitle, this.image);
 }
 
 class OnBoardingPage extends StatelessWidget {
