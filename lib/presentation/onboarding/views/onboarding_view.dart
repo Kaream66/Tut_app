@@ -117,7 +117,7 @@ class _OnboardingViewState extends State<OnBoardingView> {
         ),
         Row(
           children: [
-            for (int i = 0; i < sliderViewObject!.numOfSlides; i++)
+            for (int i = 0; i < sliderViewObject.numOfSlides; i++)
               Padding(
                 padding: EdgeInsetsGeometry.all(8),
                 child: _getCircleColor(i, sliderViewObject.currentIndex),
