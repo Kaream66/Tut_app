@@ -1,8 +1,8 @@
 import 'package:new_project/domain/models/onboarding_slider_model.dart';
 
-class OnBoardingSliderView {
+class SliderViewObject {
   SliderObject sliderObject;
   int currentIndex;
   int numOfSlides;
-  OnBoardingSliderView(this.sliderObject, this.currentIndex, this.numOfSlides);
+  SliderViewObject(this.sliderObject, this.currentIndex, this.numOfSlides);
 }
