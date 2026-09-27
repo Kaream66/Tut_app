@@ -19,7 +19,7 @@ class OnBoardingView extends StatefulWidget {
 class _OnboardingViewState extends State<OnBoardingView> {
   final PageController _pageController = PageController();
 
-  OnBoardingViewModel _viewModel = OnBoardingViewModel();
+  final OnBoardingViewModel _viewModel = OnBoardingViewModel();
 
   _bind() {
     _viewModel.start();
