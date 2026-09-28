@@ -19,11 +19,9 @@ class CustomerResponse {
   @JsonKey(name: "numberOfNotifications")
   int? numberOfNotifications;
   CustomerResponse(this.id, this.name, this.numberOfNotifications);
-  CustomerResponse.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    name = json['name'];
-    numberOfNotifications = json['numberOfNotifications'];
-  }
+  //from json
+  factory CustomerResponse.fromJson(Map<String, dynamic> json) => _$CustomerResponseFromJson(json);
+  Map<String, dynamic> toJson() => _$CustomerResponseToJson(this);
 }
 
 @JsonSerializable()
@@ -35,11 +33,8 @@ class ContactsResposne {
   @JsonKey(name: "link")
   String? link;
   ContactsResposne(this.phone, this.email, this.link);
-  ContactsResposne.fromJson(Map<String, dynamic> json) {
-    phone = json['phone'];
-    email = json['email'];
-    link = json['link'];
-  }
+  factory ContactsResposne.fromJson(Map<String, dynamic> json) => _$ContactsResposneFromJson(json);
+  Map<String, dynamic> toJson() => _$ContactsResposneToJson(this);
 }
 
 @JsonSerializable()
@@ -49,10 +44,7 @@ class AuthinticationResponse extends BaseResponse {
   @JsonKey(name: "contact")
   ContactsResposne? contact;
   AuthinticationResponse(this.customer, this.contact);
-  AuthinticationResponse.fromJson(Map<String, dynamic> json) {
-    customer = json['customer'] == null ? null : CustomerResponse.fromJson(json['customer']);
-    contact = json['contact'] == null ? null : ContactsResposne.fromJson(json['contact']);
-    status = json['status'];
-    message = json['message'];
-  }
+  factory AuthinticationResponse.fromJson(Map<String, dynamic> json) =>
+      _$AuthinticationResponseFromJson(json);
+  Map<String, dynamic> toJson() => _$AuthinticationResponseToJson(this);
 }

@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:new_project/app/consts.dart';
-import 'package:new_project/data/response.dart';
+import 'package:new_project/data/reponse/response.dart';
 import 'package:retrofit/error_logger.dart';
 import 'package:retrofit/http.dart';
 part 'app_service.g.dart';

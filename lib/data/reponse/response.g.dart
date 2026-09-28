@@ -6,36 +6,38 @@ part of 'response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
+// ignore: unused_element
 BaseResponse _$BaseResponseFromJson(Map<String, dynamic> json) => BaseResponse()
   ..status = (json['status'] as num?)?.toInt()
   ..message = json['message'] as String?;
 
+// ignore: unused_element
 Map<String, dynamic> _$BaseResponseToJson(BaseResponse instance) => <String, dynamic>{
   'status': instance.status,
   'message': instance.message,
 };
-
+// ignore: unused_element
 CustomerResponse _$CustomerResponseFromJson(Map<String, dynamic> json) => CustomerResponse(
   json['id'] as String?,
   json['name'] as String?,
   (json['numberOfNotifications'] as num?)?.toInt(),
 );
-
+// ignore: unused_element
 Map<String, dynamic> _$CustomerResponseToJson(CustomerResponse instance) => <String, dynamic>{
   'id': instance.id,
   'name': instance.name,
   'numberOfNotifications': instance.numberOfNotifications,
 };
-
+// ignore: unused_element
 ContactsResposne _$ContactsResposneFromJson(Map<String, dynamic> json) =>
     ContactsResposne(json['phone'] as String?, json['email'] as String?, json['link'] as String?);
-
+// ignore: unused_element
 Map<String, dynamic> _$ContactsResposneToJson(ContactsResposne instance) => <String, dynamic>{
   'phone': instance.phone,
   'email': instance.email,
   'link': instance.link,
 };
-
+// ignore: unused_element
 AuthinticationResponse _$AuthinticationResponseFromJson(Map<String, dynamic> json) =>
     AuthinticationResponse(
         json['customer'] == null
@@ -47,7 +49,7 @@ AuthinticationResponse _$AuthinticationResponseFromJson(Map<String, dynamic> jso
       )
       ..status = (json['status'] as num?)?.toInt()
       ..message = json['message'] as String?;
-
+// ignore: unused_element
 Map<String, dynamic> _$AuthinticationResponseToJson(AuthinticationResponse instance) =>
     <String, dynamic>{
       'status': instance.status,
